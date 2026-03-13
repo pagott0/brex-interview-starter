@@ -3,16 +3,16 @@ import { ItemList } from "@/src/components/item-list";
 
 export default function HomePage() {
   return (
-    <main className="mx-auto max-w-2xl p-6 space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold">Items</h1>
-        <p className="text-sm text-gray-600">
-          Simple MVP for interview practice.
-        </p>
-      </div>
+    <div className="min-h-screen bg-gray-50 p-6">
+      <div className="max-w-4xl mx-auto">
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold text-gray-900">Items Dashboard</h1>
+          <p className="text-gray-600">Simple Brex interview playground scaffold, lets start hacking!</p>
+        </div>
 
-      <ItemForm />
-      <ItemList />
-    </main>
+        <ItemForm />
+        <ItemList />
+      </div>
+    </div>
   );
 }
